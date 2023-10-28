@@ -1,0 +1,740 @@
+@font-face {
+    font-family: "rajdhani";
+    src: url(../police/Rajdhani-Regular.ttf);
+  }
+  @font-face {
+    font-family: "space-grotesk";
+    src: url(../police/SpaceGrotesk-VariableFont_wght.ttf);
+  }
+  #hero_game .content .titre, #hero .content .titre {
+    font-family: "rajdhani";
+    font-weight: 500;
+    font-size: 36px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  body {
+    background-color: #000;
+    font-family: "space-grotesk", sans-serif;
+    color: white;
+    font-weight: 300;
+  }
+  
+  p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .btn {
+    font-family: "rajdhani";
+    font-size: 20px;
+    color: white;
+    padding: 10px 50px;
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(70deg, rgba(237, 222, 191, 0.4) 40%, rgba(137, 0, 8, 0.4) 60%);
+    box-shadow: black 5px 5px 60px;
+    margin-left: 20px;
+  }
+  .btn:hover {
+    background: linear-gradient(80deg, rgb(237, 222, 191) 40%, rgb(137, 0, 8) 60%);
+    text-shadow: 2px 2px 3px black;
+  }
+  
+  .brand:hover,
+  .hoveryellow:hover {
+    filter: invert(18%) sepia(82%) saturate(4658%) hue-rotate(355deg) brightness(109%) contrast(112%);
+  }
+  
+  nav {
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fff;
+  }
+  nav ul a:hover {
+    color: #ffff00;
+  }
+  nav .menu-mobile {
+    opacity: 0;
+  }
+  
+  footer {
+    margin-top: 200px;
+  }
+  footer .text-footer {
+    text-align: center;
+    font-size: 14px;
+  }
+  footer .social-footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+  footer .social-footer .social-item {
+    padding: 15px;
+  }
+  
+  #hero {
+    background-position: top center;
+    background-image: url(../Illustrations/Bathome1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(130vh - 30px);
+  }
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-1000px) scale(0.1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  #hero .content {
+    animation: fadeInRight 1500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 140px;
+  }
+  #hero .content .titre {
+    margin-bottom: 40px;
+  }
+  #hero .fleche {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    margin-top: 20rem;
+  }
+  
+  #batman-cinema,
+  #batman-nemesis,
+  #batman-allies,
+  #batman-justice-league {
+    margin-top: 40px;
+  }
+  #batman-cinema .batman-personnage,
+  #batman-nemesis .batman-personnage,
+  #batman-allies .batman-personnage,
+  #batman-justice-league .batman-personnage {
+    display: flex;
+    justify-content: space-between;
+  }
+  #batman-cinema .batman-personnage div:hover,
+  #batman-nemesis .batman-personnage div:hover,
+  #batman-allies .batman-personnage div:hover,
+  #batman-justice-league .batman-personnage div:hover {
+    transform: scale(1.1);
+  }
+  #batman-cinema .batman-personnage .personnage-info,
+  #batman-nemesis .batman-personnage .personnage-info,
+  #batman-allies .batman-personnage .personnage-info,
+  #batman-justice-league .batman-personnage .personnage-info {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  #batman-cinema .titre,
+  #batman-nemesis .titre,
+  #batman-allies .titre,
+  #batman-justice-league .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+  }
+  #batman-cinema .description,
+  #batman-nemesis .description,
+  #batman-allies .description,
+  #batman-justice-league .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 85%;
+    line-height: 22px;
+    font-size: 1.1rem;
+  }
+  
+  #batman-nemesis .nemesishead {
+    display: flex;
+    align-items: center;
+  }
+  #batman-nemesis .nemesishead img {
+    width: 20%;
+  }
+  
+  #multimedia button {
+    position: relative;
+    top: 150px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  #multimedia button.right {
+    left: 92%;
+  }
+  #multimedia .slider-multimedia {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 40px auto;
+  }
+  #multimedia .slider-multimedia .slider-image {
+    width: 100%;
+  }
+  #multimedia .slider-content {
+    padding: 15px;
+    background: linear-gradient(160deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 60%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  #multimedia .slider-content p {
+    font-size: 14px;
+  }
+  #multimedia .slider-content .yellow {
+    color: #ffff00;
+    margin-left: 10px;
+  }
+  
+  #contact {
+    padding: 60px 0;
+    background: linear-gradient(143deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 80%);
+  }
+  #contact #invalid {
+    font-style: italic;
+  }
+  #contact .form {
+    width: 50%;
+    margin: auto;
+  }
+  #contact .form h2 {
+    font-family: "space-grotesk";
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+  }
+  #contact .form .title {
+    font-size: 18px;
+    display: block;
+    margin: 20px 0;
+  }
+  #contact .form input[type=email],
+  #contact .form textarea {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    outline: none;
+    color: #fff;
+  }
+  #contact .form .menu-btn,
+  #contact .form .news {
+    margin-top: 15px;
+    border-bottom: 1px solid #fff;
+  }
+  #contact .form .menu-btn #dropdownlist {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 15px;
+    font-family: "space-grotesk";
+  }
+  #contact .form .menu-btn #dropdownlist .c-bg {
+    background-color: black;
+  }
+  #contact .form .icon img {
+    transform: rotate(90deg);
+    width: 19px;
+    margin-left: 55px;
+  }
+  #contact .form .btn-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #contact .form .btn-group label.btnform {
+    width: 150px;
+    border: 2px solid;
+    -o-border-image: linear-gradient(45deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4)) 1;
+       border-image: linear-gradient(45deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4)) 1;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+  #contact .form .btn-group label.btnform:hover {
+    background-color: #19587d;
+  }
+  #contact .form input[type=radio] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  #contact .form [type=submit] {
+    margin: 35px auto;
+    display: block;
+    width: 200px;
+    border: none;
+  }
+  #contact .form ::-moz-placeholder {
+    color: #eddebf;
+    font-size: 15px;
+  }
+  #contact .form ::placeholder {
+    color: #eddebf;
+    font-size: 15px;
+  }
+  
+  #citations {
+    margin: 90px;
+  }
+  #citations .citation-carte {
+    text-align: center;
+    width: 50%;
+    margin: 30px auto;
+  }
+  #citations .citation-carte .carte-auteur {
+    padding: 40px;
+    color: #c4c4c4;
+    font-family: "radjhani";
+    font-size: 18px;
+  }
+  #citations .guillemet-close {
+    float: right;
+  }
+  
+  @font-face {
+    font-family: "rajdhani";
+    src: url(../police/Rajdhani-Regular.ttf);
+  }
+  @font-face {
+    font-family: "space-grotesk";
+    src: url(../police/SpaceGrotesk-VariableFont_wght.ttf);
+  }
+  #hero_game .content .titre, #hero .content .titre {
+    font-family: "rajdhani";
+    font-weight: 500;
+    font-size: 36px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  body {
+    background-color: #000;
+    font-family: "space-grotesk", sans-serif;
+    color: white;
+    font-weight: 300;
+  }
+  
+  p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .btn {
+    font-family: "rajdhani";
+    font-size: 20px;
+    color: white;
+    padding: 10px 50px;
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(70deg, rgba(237, 222, 191, 0.4) 40%, rgba(137, 0, 8, 0.4) 60%);
+    box-shadow: black 5px 5px 60px;
+    margin-left: 20px;
+  }
+  .btn:hover {
+    background: linear-gradient(80deg, rgb(237, 222, 191) 40%, rgb(137, 0, 8) 60%);
+    text-shadow: 2px 2px 3px black;
+  }
+  
+  .brand:hover,
+  .hoveryellow:hover {
+    filter: invert(18%) sepia(82%) saturate(4658%) hue-rotate(355deg) brightness(109%) contrast(112%);
+  }
+  
+  nav {
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 25px;
+    color: #fff;
+  }
+  nav ul a:hover {
+    color: #ffff00;
+  }
+  nav .menu-mobile {
+    opacity: 0;
+  }
+  
+  footer {
+    margin-top: 200px;
+  }
+  footer .text-footer {
+    text-align: center;
+    font-size: 14px;
+  }
+  footer .social-footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+  footer .social-footer .social-item {
+    padding: 15px;
+  }
+  
+  #hero_game {
+    background-position: top center;
+    background-image: url(../Illustrations/Batgame_1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(130vh - 30px);
+  }
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(-1000px) scale(0.1);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  #hero_game .content {
+    animation: fadeInRight 1500ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    padding-top: 140px;
+  }
+  #hero_game .content .titre {
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+  #hero_game .fleche {
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    margin-top: 20rem;
+  }
+  
+  #batman-cinema,
+  #batman-nemesis,
+  #batman-allies,
+  #batman-justice-league {
+    margin-top: 40px;
+  }
+  #batman-cinema .batman-personnage,
+  #batman-nemesis .batman-personnage,
+  #batman-allies .batman-personnage,
+  #batman-justice-league .batman-personnage {
+    display: flex;
+    justify-content: space-between;
+  }
+  #batman-cinema .batman-personnage div:hover,
+  #batman-nemesis .batman-personnage div:hover,
+  #batman-allies .batman-personnage div:hover,
+  #batman-justice-league .batman-personnage div:hover {
+    transform: scale(1.1);
+  }
+  #batman-cinema .batman-personnage .personnage-info,
+  #batman-nemesis .batman-personnage .personnage-info,
+  #batman-allies .batman-personnage .personnage-info,
+  #batman-justice-league .batman-personnage .personnage-info {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  #batman-cinema .titre,
+  #batman-nemesis .titre,
+  #batman-allies .titre,
+  #batman-justice-league .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+  }
+  #batman-cinema .description,
+  #batman-nemesis .description,
+  #batman-allies .description,
+  #batman-justice-league .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 85%;
+    line-height: 22px;
+    font-size: 1.1rem;
+  }
+  
+  #batman-nemesis .nemesishead {
+    display: flex;
+    align-items: center;
+  }
+  #batman-nemesis .nemesishead img {
+    width: 20%;
+  }
+  
+  #multimedia button {
+    position: relative;
+    top: 150px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  #multimedia button.right {
+    left: 92%;
+  }
+  #multimedia .slider-multimedia {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 40px auto;
+  }
+  #multimedia .slider-multimedia .slider-image {
+    width: 100%;
+  }
+  #multimedia .slider-content {
+    padding: 15px;
+    background: linear-gradient(160deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 60%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  #multimedia .slider-content p {
+    font-size: 14px;
+  }
+  #multimedia .slider-content .yellow {
+    color: #ffff00;
+    margin-left: 10px;
+  }
+  
+  #contact {
+    padding: 60px 0;
+    background: linear-gradient(143deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4) 80%);
+  }
+  #contact .form {
+    width: 50%;
+    margin: auto;
+  }
+  #contact .form h2 {
+    font-family: "space-grotesk";
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+  }
+  #contact .form .title {
+    font-size: 18px;
+    display: block;
+    margin: 20px 0;
+  }
+  #contact .form input[type=email],
+  #contact .form textarea {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+    outline: none;
+    color: #fff;
+  }
+  #contact .form .menu-btn,
+  #contact .form .news {
+    margin-top: 15px;
+    border-bottom: 1px solid #fff;
+  }
+  #contact .form .menu-btn #dropdownlist {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 15px;
+    font-family: "space-grotesk";
+  }
+  #contact .form .menu-btn #dropdownlist .c-bg {
+    background-color: black;
+  }
+  #contact .form .icon img {
+    transform: rotate(90deg);
+    width: 19px;
+    margin-left: 55px;
+  }
+  #contact .form .btn-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+  }
+  #contact .form .btn-group label.btnform {
+    width: 150px;
+    border: 2px solid;
+    -o-border-image: linear-gradient(45deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4)) 1;
+       border-image: linear-gradient(45deg, rgba(237, 222, 191, 0.4), rgba(25, 88, 125, 0.4)) 1;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 15px;
+    text-align: center;
+    cursor: pointer;
+  }
+  #contact .form .btn-group label.btnform:hover {
+    background-color: #19587d;
+  }
+  #contact .form input[type=radio] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  #contact .form [type=submit] {
+    margin: 35px auto;
+    display: block;
+    width: 200px;
+    border: none;
+  }
+  #contact .form ::-moz-placeholder {
+    color: #eddebf;
+    font-size: 15px;
+  }
+  #contact .form ::placeholder {
+    color: #eddebf;
+    font-size: 15px;
+  }
+  
+  #citations {
+    margin: 90px;
+  }
+  #citations .citation-carte {
+    text-align: center;
+    width: 50%;
+    margin: 30px auto;
+  }
+  #citations .citation-carte .carte-auteur {
+    padding: 40px;
+    color: #c4c4c4;
+    font-family: "radjhani";
+    font-size: 18px;
+  }
+  #citations .guillemet-close {
+    float: right;
+  }
+  
+  .scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 50px;
+    top: 180px;
+  }
+  .scroll img {
+    margin-top: 20px;
+  }
+  .scroll .social {
+    width: 30%;
+  }
+  
+  /*LES LIGNES*/
+  .up-bar {
+    position: absolute;
+    left: 102px;
+    top: 132px;
+    width: calc(100vw - 218px);
+    border-top: 2px solid rgba(188, 187, 189, 0.1647058824);
+  }
+  
+  .left-bar,
+  .right-bar {
+    position: absolute;
+    border-left: 2px solid rgba(188, 187, 189, 0.1647058824);
+    height: 1100vh;
+  }
+  
+  .left-bar {
+    left: 102px;
+  }
+  
+  .right-bar {
+    right: 102px;
+  }
+  
+  .popupbox {
+    background: linear-gradient(143deg, rgb(237, 222, 191), rgb(25, 88, 125) 80%);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    top: 250px;
+    left: 300px;
+    display: none;
+  }
+  .popupbox .inside {
+    padding: 50px;
+    margin: 30px;
+    background-color: #19587d;
+    border-radius: 20px;
+    box-shadow: 2px 2px 40px black;
+  }
+  .popupbox .inside h1 {
+    text-transform: uppercase;
+  }/*# sourceMappingURL=main.css.map */

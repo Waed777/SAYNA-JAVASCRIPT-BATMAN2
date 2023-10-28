@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  body {
+    background-color: $color-black;
+    font-family: 'space-grotesk', sans-serif;
+    color: white;
+    font-weight: 300;
+  }
+  
+  p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .btn {
+    font-family: 'rajdhani';
+    font-size: 20px;
+    color: white;
+    padding: 10px 50px;
+  
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(
+      70deg,
+      rgba(237, 222, 191, 0.4) 40%,
+      rgba(137, 0, 8, 0.4) 60%
+    );
+    box-shadow: black 5px 5px 60px;
+    margin-left: 20px;
+    &:hover {
+      background: linear-gradient(
+        80deg,
+        rgba(237, 222, 191, 1) 40%,
+        rgba(137, 0, 8, 1) 60%
+      );
+      text-shadow: 2px 2px 3px black;
+    }
+  }
+  
+  .brand:hover,
+  .hoveryellow:hover {
+    filter: invert(18%) sepia(82%) saturate(4658%) hue-rotate(355deg)
+      brightness(109%) contrast(112%);
+  }

@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+:root {
+  --color-yellow: #ffff00;
+  --color-yellow-alt: #f8f184;
+  --color-blue: #19587d;
+  --color-red: #b11313;
+  --color-black: #000;
+  --color-black-alt: #0d0e09;
+  --color-gray: #c4c4c4;
+  --color-white: #fff;
+  --color-grad-00: #eddebf;
+  --color-grad-11: #890008;
+}
+
+/* @font-face {
+  font-family: 'rajdhani';
+  src: url(../police/Rajdhani-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'space-grotesk';
+  src: url(../police/SpaceGrotesk-VariableFont_wght.ttf);
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: 'Rajdhani';
+  font-weight: 400;
+  font-size: 36px;
+}
+
+button {
+  font-family: 'Rajdhani';
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+p {
+  font-size: 22px;
+}
+
+/* Navigation Bar */
+
+nav {
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+  color: #fff;
+}
+ul a:hover {
+  color: #ffff00;
+}
+
+.brand:hover {
+  filter: invert(18%) sepia(82%) saturate(4658%) hue-rotate(355deg)
+    brightness(109%) contrast(112%);
+}
+
+/* Top header*/
+
+#hero {
+  background-position: top center;
+  background-image: url(../Illustrations/Bathome1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  color: var(--color-white);
+  padding-top: 150px;
+}
+#hero .titre {
+  color: white;
+  margin-bottom: 40px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.btn {
+  font-family: 'rajdhani';
+  font-size: 20px;
+  color: white;
+  padding: 10px 50px;
+
+  text-decoration: none;
+  display: inline-block;
+  background: linear-gradient(
+    70deg,
+    rgba(237, 222, 191, 0.4) 40%,
+    rgba(137, 0, 8, 0.4) 60%
+  );
+  box-shadow: black 5px 5px 60px;
+  margin-left: 20px;
+}
+#hero p {
+  font-size: 20px;
+  margin: 40px 0;
+}
+#hero .fleche {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  margin-top: 250px;
+}
+
+/* Design de la section batman personnage */
+#batman-cinema,
+#batman-nemesis,
+#batman-allies,
+#batman-justice-league {
+  margin-top: 40px;
+}
+.batman-personnage {
+  display: flex;
+  justify-content: space-between;
+}
+
+#batman-cinema .titre,
+#batman-nemesis .titre {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
+#batman-cinema .description,
+#batman-nemesis .description {
+  margin-bottom: 40px;
+  text-align: justify;
+  width: 85%;
+  line-height: 34px;
+}
+
+#batman-cinema .personnage-info,
+#batman-nemesis .personnage-info {
+  text-align: center;
+}
+
+/* Partie Design MULTIMEDIA */
+#multimedia button {
+  position: relative;
+  top: 150px;
+  background-color: transparent;
+  border: none;
+}
+
+#multimedia button.right {
+  left: 92%;
+}
+
+#multimedia .slider-multimedia {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: 40px auto;
+}
+#multimedia .slider-image {
+  width: 100%;
+}
+#multimedia .slider-content {
+  padding: 15px;
+  background: linear-gradient(
+    160deg,
+    rgba(237, 222, 191, 0.4),
+    rgba(25, 88, 125, 0.4) 60%
+  );
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#multimedia p {
+  font-size: 14px;
+}
+
+#multimedia .yellow {
+  color: #ffff00;
+}
+
+#multimedia .video {
+  text-align: center;
+}
+
+/* Design de la partie Contact/ Formulaire */
+
+#contact {
+  padding: 60px 0;
+  background: linear-gradient(
+    143deg,
+    rgba(237, 222, 191, 0.4),
+    rgba(25, 88, 125, 0.4) 80%
+  );
+}
+.form h2 {
+  font-family: 'Space Grotesk';
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+#contact .form {
+  width: 50%;
+  margin: auto;
+}
+.form .title {
+  font-size: 18px;
+  display: block;
+  margin: 20px 0;
+}
+.form input[type='email'],
+.form textarea {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+#contact .menu-btn,
+#contact .news {
+  margin-top: 15px;
+  border-bottom: 1px solid white;
+}
+#contact .icon img {
+  transform: rotate(90deg);
+  width: 19px;
+  margin-left: 55px;
+}
+::placeholder {
+  color: #eddebf;
+  font-size: 15px;
+}
+.btn-group {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.form input[type='radio'] {
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.btn-group label.btnform {
+  cursor: pointer;
+  width: 150px;
+  border: 2px solid;
+  border-image: linear-gradient(
+      45deg,
+      rgba(237, 222, 191, 0.4),
+      rgba(25, 88, 125, 0.4)
+    )
+    1;
+  font-size: 20px;
+
+  padding: 10px;
+  text-align: center;
+}
+
+[type='submit'] {
+  margin: 35px auto;
+  display: block;
+  width: 200px;
+  border: none;
+}
+
+/* Design partie des citations */
+#citations {
+  margin: 90px;
+}
+#citations .citation-carte {
+  text-align: center;
+  width: 50%;
+  margin: 30px auto;
+}
+#citations .citation-carte .carte-auteur {
+  padding: 40px;
+  color: #c4c4c4;
+  font-family: 'radjhani';
+  font-size: 18px;
+}
+
+#citations .guillemet-close {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer .text-footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+footer .social-footer {
+  text-align: center;
+  margin-top: 40px;
+}
+footer .social-footer .social-item {
+  padding: 20px;
+}
+
+/* SCROLBARR DESIGN */
+
+.scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 50px;
+  top: 250px;
+}
+.scroll img {
+  width: 80%;
+  margin-top: 20px;
+}
+.scroll .social {
+  width: 30%;
+}
+
+/* Les barres dans le HTML */
+.up-bar {
+  border-top: 2px solid rgba(188, 188, 188, 0.5);
+  position: absolute;
+  width: 85%;
+  top: 132px;
+  left: 102px;
+  /* width: calc(100vw - 218px); */
+}
+
+.left-bar {
+  position: absolute;
+  border-left: 2px solid rgba(188, 188, 188, 0.5);
+  left: 100px;
+  height: 850%;
+}
+
+.right-bar {
+  position: absolute;
+  border-right: 2px solid rgba(188, 188, 188, 0.5);
+  right: 100px;
+  height: 850%;
+}

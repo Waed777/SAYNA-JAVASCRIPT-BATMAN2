@@ -1,0 +1,24 @@
+.popupbox {
+    background: linear-gradient(
+      143deg,
+      rgba(237, 222, 191, 1),
+      rgba(25, 88, 125, 1) 80%
+    );
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    top: 250px;
+    left: 300px;
+    .inside {
+      padding: 50px;
+      margin: 30px;
+      background-color: $color-blue;
+      border-radius: 20px;
+      box-shadow: 2px 2px 40px black;
+      h1 {
+        text-transform: uppercase;
+      }
+    }
+    display: none;
+  }
